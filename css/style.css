@@ -93,7 +93,7 @@ body {
     bottom: -6px;
     width: 100%;
     height: .2rem;
-    background: var(--bg-color);
+    background: var(--white-color);
 }
 
 .header.sticky.navbar a::before{
@@ -103,7 +103,7 @@ body {
 
 #darkMode-icon {
     font-size: 2.4rem;
-    color: var(--bg-color);
+    color: var(--white-color);
     cursor: pointer;
 }
 
@@ -197,7 +197,7 @@ section {
     top:50%;
     right: 0 ;
     transform: translateY(-50%);
-    width: 690px;
+    width: 768px;
     height: 768px;
     overflow: hidden;
     pointer-events: none;
@@ -206,12 +206,35 @@ section {
 position: absolute;
 top:0;
 right: 0;
-width: 690px;
+width: 768px;
 height: 768px;
 border-radius: 50%;
 display: flex;
 justify-content: center;
 align-items: center;
+animation: professionRotate 13s ease-out infinite;
+}
+
+@keyframes professionRotate{
+    0%, 20%{
+        transform: rotate(0deg);
+    }
+
+    25%, 45%{
+        transform: rotate(-90deg);
+    }
+
+    50%, 70%{
+        transform: rotate(-180deg);
+    }
+
+    75%, 90%{
+        transform: rotate(-270deg);
+    }
+
+    100%{
+        transform: rotate(-360deg);
+    }
 }
 
 .home .profession-box .profession{
@@ -242,14 +265,14 @@ align-items: center;
 }
 
 .home .profession h3{
-    font-size: 2.1rem;
+    font-size: 2.5rem;
     line-height: 1;
     font-weight: 450;
 }
 
 .home .profession-box .circle{
-width: 540px;
-height: 540px;
+width: 520px;
+height: 520px;
 border: 3px solid var(--main-color);
 border-radius: 50%;
 
@@ -262,9 +285,9 @@ border-radius: 50%;
     width: 0;
     height: 0;
     border-top: 384px solid var(--main-color);
-    border-right: 345px solid var(--main-color);
+    border-right: 384px solid var(--main-color);
     border-bottom: 384px solid var(--main-color);
-    border-left: 345px solid transparent;
+    border-left: 384px solid transparent;
 }
 
 .home-img img{
