@@ -36,7 +36,7 @@ html {
     overflow-x: hidden;
 }
 
-.body {
+body {
     background: var(--bg-color);
     color: var(--text-color);
 }
@@ -414,7 +414,7 @@ transition: .5s ease;
 }
 
 .projects-box p{
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin: 1rem 0 3rem;
 }
 
